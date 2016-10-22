@@ -343,8 +343,7 @@ abstract class WorkerCommandAbstract extends Command implements ContainerAwareIn
      */
     private function delay()
     {
-        if ($this->delay)
-        {
+        if ($this->delay) {
             sleep($this->delay);
         }
     }
