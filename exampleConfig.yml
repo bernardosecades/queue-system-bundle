@@ -1,0 +1,12 @@
+queue_system:
+    # Queues definition
+    queues:
+        videos: "queue:images"
+        audios: "queue:api"
+
+    # Server configuration. By default, these values
+    server:
+        redis:
+            host: 127.0.0.1
+            port: 6379
+            database: ~

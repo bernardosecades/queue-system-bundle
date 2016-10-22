@@ -1,0 +1,13 @@
+services:
+    queue_system.redis.driver:
+        class: BernardoSecades\QueueSystemBundle\Driver\RedisDriver
+        arguments:
+            redis: "%queue_system.server.redis%"
+    queue_system.demo_job:
+        class: BernardoSecades\QueueSystemBundle\Job\DemoJob
+    queue_system.queue_demo:
+        class: BernardoSecades\QueueSystemBundle\Queue\Queue
+        arguments:
+            - "queue:demo"
+            - "@queue_system.redis.driver"
+            - "@serializer"
