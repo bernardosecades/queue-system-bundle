@@ -50,7 +50,7 @@ return array(
 
 In the current version, all conections are localhost:6379, but as soon as posible connections will be configurable, the same for events.
 You need to configure all.
-By default jms serializer has the value 'Json', but also 'PHP' value can be used. In next version you will can implement custom serializer.
+By default jms serializer has the value 'Json'. In next version you will can implement custom serializer.
 
 ``` yml
 queue_system:
@@ -70,7 +70,7 @@ queue_system:
 Jobs and Queues
 ---------------
 
-Each queue you define in config.yml will create a queue SERVICE, for example if you define queue 'queue:api' you can access to queue
+Each queue you define in config.yml will create a queue service, for example if you define queue 'queue:api' you can access to queue
 like a service with `$this->getContainer()->get('queue_system.queue_api')`, example:
 
 `Producer`
@@ -134,7 +134,6 @@ The command have options like:
 - --worker-tries-process-job=WORKER-TRIES-PROCESS-JOB Number of retries to process a job [default: 0]
 - --worker-max-memory=WORKER-MAX-MEMORY Memory limit (Mb) [default: 0]
 - --worker-sleep=WORKER-SLEEP In addition, you may specify the number of seconds to wait before polling for new jobs: [default: 0]
--
 
 Todo
 -----
