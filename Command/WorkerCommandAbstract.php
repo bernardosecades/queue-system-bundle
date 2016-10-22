@@ -332,10 +332,10 @@ abstract class WorkerCommandAbstract extends Command implements ContainerAwareIn
     private function shutdown($exitCode)
     {
         if (in_array($exitCode, [WorkerControlCodes::WORKING, WorkerControlCodes::NO_JOBS])) {
-            return 1;
+            return 0;
         }
 
-        return 0;
+        return 1;
     }
 
     /**
