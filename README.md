@@ -36,7 +36,7 @@ Then you have to use composer to update your project dependencies
 php composer.phar update
 ```
 
-And register the bundle in your appkernel.php file
+And register the bundle in your AppKernel.php file
 
 ``` php
 return array(
