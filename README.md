@@ -1,7 +1,7 @@
 QueueSytem for Symfony
 ======================
 
-### Simple queue system based on Redis
+Simple queue system based on Redis
 
 Installing/Configuring
 ----------------------
