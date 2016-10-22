@@ -83,7 +83,7 @@ use BernardoSecades\QueueSystemBundle\Job\MessageDataJob;
 /** @var \BernardoSecades\QueueSystemBundle\Queue\Queue $queue */
 $queue = $this->getContainer()->get('queue_system.queue_api');
 
-$message = new Message('queue_system.api_job', ['user_id' => 13567]);
+$message = new MessageDataJob('queue_system.api_job', ['user_id' => 13567]);
 
 $queue->enqueue($message);
 
